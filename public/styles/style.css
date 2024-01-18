@@ -1,0 +1,10 @@
+body{
+  background-color: black;
+}
+
+div:first-child{
+  min-height: 100vh;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
