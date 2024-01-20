@@ -16,6 +16,12 @@
       <p>
         <%= content.temp %>
       </p>
+    <!-- Weather Description -->
+    <label class="mb-1 h3 text-success">Weather Overview</label>
+      <p>
+        <%= content.description %>
+      </p>
+     
     <!-- Display sunrise -->
     <label class="mb-1 h3 text-success">Sunrise Time</label>
 
@@ -30,7 +36,7 @@
       </p>
 
 
-    <input class="mt-2 btn btn-warning text-white" id="get" type="submit" value="Find Out" formaction="/get-weather">
+    <input class="mt-1 btn btn-warning text-white" id="get" type="submit" value="Find Out" formaction="/get-weather">
   </form>
   
 </div>
