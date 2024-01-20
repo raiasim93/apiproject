@@ -21,20 +21,31 @@
       <p>
         <%= content.description %>
       </p>
+  
+      <hr class="horizontal-line">
+    
+    <div class="container d-flex text-center">
+       <!-- Display sunrise -->
+       <div class="container col-lg-6 col-sm-12">
+        <label class="mb-1 h3 text-success">Min Temp </label>
+
+        <p>
+          <%= content.minTemp %>
+        </p>
+       </div>
+       
+        <div class="container col-lg-6 col-sm-12">
+           <!-- Display sunset -->
+      <label class="mb-1 h3 text-success">Max Temp</label>
+      <p>
+        <%= content.maxTemp %>
+      </p>
+
+  </div>
+        </div>
+
      
-    <!-- Display sunrise -->
-    <label class="mb-1 h3 text-success">Sunrise Time</label>
-
-      <p>
-        <%= content.sunrise %>
-      </p>
-
-    <!-- Display sunset -->
-    <label class="mb-1 h3 text-success">Sunset Time </label>
-      <p>
-        <%= content.sunset %>
-      </p>
-
+   
 
     <input class="mt-1 btn btn-warning text-white" id="get" type="submit" value="Find Out" formaction="/get-weather">
   </form>

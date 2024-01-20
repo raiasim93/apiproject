@@ -35,3 +35,13 @@ p{
 }
 
 
+input[name="location"]{
+  width: 80%;
+
+  display: block;
+}
+
+.horizontal-line{
+  border: 2px solid #182b4c;
+  width: 80%;
+}
