@@ -9,6 +9,26 @@
     <label class="mb-2 h5" for="yourLocation">Enter your location </label>
     <input class="mb-4 p-2" type="text" id="yourLocation" name="location">
 
+    <!-- city and country -->
+    <div class="container col-lg-8 d-flex text-center">
+      <!-- Display city name -->
+      <div class="container col-lg-6 col-md-6 col-sm-12">
+       <label class="mb-1 h3 text-success">City </label>
+
+       <p class="text-uppercase">
+         <%= content.city %>
+       </p>
+      </div>
+      
+       <div class="container col-lg-6 col-md-6 col-sm-12">
+          <!-- Display country name -->
+     <label class="mb-1 h3 text-success">Country</label>
+     <p class="text-uppercase">
+       <%= content.country %>
+     </p>
+
+ </div>
+       </div>
     <!-- <label for=""></label>
     <input type="text"> -->
     <!-- Display Temperature -->
@@ -17,16 +37,16 @@
         <%= content.temp %>
       </p>
     <!-- Weather Description -->
-    <label class="mb-1 h3 text-success">Weather Overview</label>
-      <p>
+    <label class="mb-1 h3 text-success ">Weather Overview</label>
+      <p class="text-uppercase">
         <%= content.description %>
       </p>
   
       <hr class="horizontal-line">
     
-    <div class="container d-flex text-center">
+    <div class="container d-flex text-center col-lg-8 ">
        <!-- Display sunrise -->
-       <div class="container col-lg-6 col-sm-12">
+       <div class="container col-lg-6 col-md-6 col-sm-12">
         <label class="mb-1 h3 text-success">Min Temp </label>
 
         <p>
@@ -34,7 +54,7 @@
         </p>
        </div>
        
-        <div class="container col-lg-6 col-sm-12">
+        <div class="container col-lg-6 col-md-6 col-sm-12" >
            <!-- Display sunset -->
       <label class="mb-1 h3 text-success">Max Temp</label>
       <p>
